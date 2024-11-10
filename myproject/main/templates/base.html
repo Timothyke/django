@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsha Project</title>
+    <!-- Link to CSS files in the static folder -->
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/fontawesome/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <!-- Header (put your navigation/header here) -->
+    <header>
+        <!-- Header content from Arsha template goes here -->
+    </header>
+
+    <!-- Main content block -->
+    <main>
+        {% block content %}
+        <!-- Content unique to each page will go here -->
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer content from Arsha template goes here -->
+    </footer>
+
+    <!-- Link to JavaScript files in the static folder -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
